@@ -1,0 +1,246 @@
+@font-face {
+    font-family: hanken;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+body {
+    font-family: hanken;
+    
+}
+header {
+    background-image: linear-gradient(#6743FF,#312CEA);
+    border-radius: 0 0 20px 20px; 
+    height: auto;
+}
+header h2 {
+    font-size: 17px;
+    text-align: center;
+    color: whitesmoke;
+    opacity: 0.7;
+    text-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+header .score {
+    margin: auto;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    background-image: linear-gradient(#4A23CA, #4734F0);
+}
+header .score p {
+    color: white;
+    font-size:  40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+header .score span {
+    display: block;
+    color: whitesmoke;
+    opacity: 0.5;
+    font-size: 13px;
+    text-align: center;
+}
+header h1 {
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+    padding-top: 10px;
+}
+header .congrats {
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    opacity: 0.7;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 80%;
+}
+main h1 {
+    font-size: 18px;
+    margin: 15px 0 15px 20px;
+}
+main .summary {
+    width: 90%;
+    margin: auto;
+}
+div [class*="item"] {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.item1 [class*="name"]::before{
+    content: url(./assets/images/icon-reaction.svg) ;
+    vertical-align: middle;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.item2 [class*="name"]::before{
+    content: url(./assets/images/icon-memory.svg) ;
+    vertical-align: middle;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.item3 [class*="name"]::before{
+    content: url(./assets/images/icon-verbal.svg) ;
+    vertical-align: middle;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.item4 [class*="name"]::before{
+    content: url(./assets/images/icon-visual.svg) ;
+    vertical-align: middle;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.item1 .name {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    opacity: 0.7;
+}
+[class*="item"] .value {
+    color: black;
+    font-weight: bold;
+}
+[class*="item"] span {
+    opacity: 0.7;
+}
+.item1 {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+.item2 .name {
+    color: rgb(238, 255, 0);
+    font-weight: bold;
+    opacity: 0.7;
+}
+.item3 .name {
+    color: rgb(0, 255, 98);
+    font-weight: bold;
+    opacity: 0.7;
+}
+.item4 .name {
+    color: rgb(0, 0, 255);
+    font-weight: bold;
+    opacity: 0.7;
+}
+.item2 {
+    background-color: rgba(238, 255, 0, 0.1);
+}
+.item3 {
+    background-color: rgba(0, 255, 98, 0.1);
+}
+.item4 {
+    background-color: rgba(0, 0, 255, 0.1);
+}
+main button {
+    background-color: rgb(1, 1, 157);
+    width: 90%;
+    display: block;
+    margin: auto;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    box-shadow: 0 10px gray;
+    border: none;
+}
+main button:active {
+    background-color: rgb(0, 0, 64);
+    transform: translateY(6px);
+    box-shadow: 0 4px gray;
+}
+.body{
+    height: 350px;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+@media screen and (min-width: 530px ){
+    header {
+        height: 350px;
+        border-radius: 20px;
+    }
+    main {
+        height: 350px;
+        border-radius: 20px;
+    }
+    .body {
+        box-shadow: 10px 10px 30px lightblue;
+    }
+}
+@media screen and (min-width: 800px){
+    .body {
+        height: 700px;
+    }
+    header{
+        height: 700px;
+    }
+    header h2 {
+        font-size: 35px;
+    }
+    header .score {
+        height: 240px;
+        width: 240px;
+    }
+    header .score p{
+        font-size: 80px;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    header .score span{
+        font-size: 26px;
+    }
+    header h1{
+        font-size: 50px;
+        padding-top: 20px;
+    }
+    header .congrats{
+        font-size: 30px;
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+
+    main {
+        height: 700px;
+    }
+    main h1 {
+        font-size: 36px;
+        margin: 30px 0 30px 40px;
+    }
+    div [class*="item"]{
+        padding: 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .item1 [class*="name"]::before{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .item2 [class*="name"]::before{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .item3 [class*="name"]::before{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .item4 [class*="name"]::before{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    main button {
+        height: 80px;
+        font-size: 36px;
+        border-radius: 40px;
+        box-shadow: 0 20px gray;
+    }
+    main button:active {
+        transform: translateY(12px);
+      box-shadow: 0 8px gray;
+    }
+}
